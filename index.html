@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Parth Solanki | AI/ML Engineer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Parth Solanki, an AI/ML Engineer from Ahmedabad building Machine Learning, Deep Learning, NLP, RAG and agentic AI applications with LangGraph and FastAPI.">
+  <meta name="author" content="Parth Solanki">
+  <meta name="keywords"
+    content="Parth Solanki, AI/ML Engineer, Machine Learning, Deep Learning, NLP, Generative AI, RAG, LangGraph, LangChain, FastAPI, Ahmedabad, portfolio">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#4C4E49">
+
+  <!-- Open Graph / social previews -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Parth Solanki | AI/ML Engineer">
+  <meta property="og:description"
+    content="Building intelligent solutions for a smarter tomorrow. ML, NLP, RAG and agentic AI projects, deployed with FastAPI.">
+  <meta property="og:image" content="assets/profile.jpg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Parth Solanki | AI/ML Engineer">
+  <meta name="twitter:description" content="ML, NLP, RAG and agentic AI projects, deployed with FastAPI.">
+
+  <!-- Inline SVG favicon so no extra file is needed -->
+  <link rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%234C4E49'/%3E%3Ctext x='32' y='43' font-family='Georgia,serif' font-size='30' font-weight='700' text-anchor='middle' fill='%23FFFFFF'%3EPS%3C/text%3E%3C/svg%3E">
+
+  <!-- Fonts (fall back to Georgia / system sans if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Inter:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Reveal animations only hide content when JavaScript is available -->
+  <script>document.documentElement.classList.add('js');</script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Parth Solanki",
+    "jobTitle": "AI/ML Engineer",
+    "email": "mailto:iparthsolanki29@gmail.com",
+    "address": { "@type": "PostalAddress", "addressLocality": "Ahmedabad", "addressRegion": "Gujarat", "addressCountry": "IN" },
+    "alumniOf": { "@type": "CollegeOrUniversity", "name": "Swaminarayan University" },
+    "sameAs": [
+      "https://github.com/iparthsolanki",
+      "https://www.linkedin.com/in/parth-solanki-2908pr/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24">
+        <rect x="3" y="5" width="18" height="14" rx="2" />
+        <path d="m3 7 9 6 9-6" />
+      </symbol>
+      <symbol id="i-github" viewBox="0 0 24 24">
+        <path
+          d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+      </symbol>
+      <symbol id="i-linkedin" viewBox="0 0 24 24">
+        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+        <rect x="2" y="9" width="4" height="12" />
+        <circle cx="4" cy="4" r="2" />
+      </symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24">
+        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+        <circle cx="12" cy="10" r="3" />
+      </symbol>
+      <symbol id="i-cap" viewBox="0 0 24 24">
+        <path d="M22 10 12 5 2 10l10 5 10-5z" />
+        <path d="M6 12v5c3 3 9 3 12 0v-5" />
+      </symbol>
+      <symbol id="i-download" viewBox="0 0 24 24">
+        <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+        <path d="m7 10 5 5 5-5" />
+        <path d="M12 15V3" />
+      </symbol>
+      <symbol id="i-external" viewBox="0 0 24 24">
+        <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" />
+        <path d="M15 3h6v6" />
+        <path d="M10 14 21 3" />
+      </symbol>
+      <symbol id="i-up" viewBox="0 0 24 24">
+        <path d="M12 19V5" />
+        <path d="m5 12 7-7 7 7" />
+      </symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24">
+        <path d="M5 12h14" />
+        <path d="m12 5 7 7-7 7" />
+      </symbol>
+      <symbol id="i-award" viewBox="0 0 24 24">
+        <circle cx="12" cy="8" r="7" />
+        <path d="m8.21 13.89-1.21 9.11 5-3 5 3-1.21-9.12" />
+      </symbol>
+      <symbol id="i-briefcase" viewBox="0 0 24 24">
+        <rect x="2" y="7" width="20" height="14" rx="2" />
+        <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+      </symbol>
+      <symbol id="i-send" viewBox="0 0 24 24">
+        <path d="m22 2-7 20-4-9-9-4z" />
+        <path d="M22 2 11 13" />
+      </symbol>
+    </defs>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <div class="scroll-progress" aria-hidden="true"><span id="scrollProgress"></span></div>
+
+  <!-- ============ NAVIGATION ============ -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Parth Solanki, back to top">
+        <span class="brand__mark" aria-hidden="true">PS</span>
+        <span class="brand__name">Parth Solanki</span>
+      </a>
+
+      <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="primaryNav"
+        aria-label="Open menu">
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+        <span class="nav-toggle__bar"></span>
+      </button>
+
+      <nav class="nav__menu" id="primaryNav" aria-label="Primary">
+        <ul class="nav__list">
+          <li><a class="nav__link" href="#home">Home</a></li>
+          <li><a class="nav__link" href="#about">About</a></li>
+          <li><a class="nav__link" href="#skills">Skills</a></li>
+          <li><a class="nav__link" href="#projects">Projects</a></li>
+          <li><a class="nav__link" href="#experience">Experience</a></li>
+          <li><a class="nav__link" href="#certifications">Certifications</a></li>
+          <li><a class="nav__link" href="#contact">Contact</a></li>
+        </ul>
+        <a class="btn btn--primary btn--sm nav__cta js-resume" href="Parth_Solanki_AI_ML_Engineer_Resume.pdf"
+          download="Parth_Solanki_AI_ML_Engineer_Resume.pdf">
+          <svg class="icon" aria-hidden="true">
+            <use href="#i-download" />
+          </svg>
+          Download Resume
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <!-- Animated backdrop: drifting aurora + interactive neural-network canvas -->
+      <div class="hero__aurora" aria-hidden="true"><span></span><span></span><span></span></div>
+      <canvas class="hero__canvas" id="neuralCanvas" aria-hidden="true"></canvas>
+
+      <div class="container hero__grid">
+        <div class="hero__content">
+          <p class="status-pill hero-anim" style="--i:0">
+            <span class="status-pill__dot" aria-hidden="true"></span>
+            Open to AI/ML Opportunities
+          </p>
+
+          <p class="hero__role hero-anim" style="--i:1">AI/ML Engineer <span aria-hidden="true">·</span> BCA Honours
+            Student</p>
+
+          <h1 class="hero__title hero-anim" id="hero-title" style="--i:2">
+            Building <em>Intelligent Solutions</em> for a Smarter Tomorrow.
+          </h1>
+
+          <p class="hero__intro hero-anim" style="--i:3">
+            Hi, I'm Parth. I build end-to-end Machine Learning, Deep Learning, NLP and Generative AI
+            applications, from exploratory analysis and model tuning to agentic RAG workflows deployed as FastAPI
+            services.
+          </p>
+
+          <p class="hero__typed hero-anim" style="--i:4">
+            <span class="hero__typed-label">I work with</span>
+            <span class="typed" id="typed" aria-hidden="true">Machine Learning</span><span class="typed__caret"
+              aria-hidden="true"></span>
+            <span class="sr-only">Machine Learning, Deep Learning and NLP, RAG and agentic AI, FastAPI
+              deployments.</span>
+          </p>
+
+          <ul class="hero__meta hero-anim" style="--i:4">
+            <li><svg class="icon" aria-hidden="true">
+                <use href="#i-pin" />
+              </svg> Ahmedabad, Gujarat, India</li>
+            <li><svg class="icon" aria-hidden="true">
+                <use href="#i-cap" />
+              </svg> BCA Honours, Swaminarayan University (2024–2028)</li>
+          </ul>
+
+          <div class="hero__actions hero-anim" style="--i:5">
+            <a class="btn btn--primary" data-magnetic href="#projects">Explore My Work <svg class="icon"
+                aria-hidden="true">
+                <use href="#i-arrow" />
+              </svg></a>
+            <a class="btn btn--ghost" data-magnetic href="#contact">Contact Me</a>
+          </div>
+
+          <ul class="social hero-anim" style="--i:6" aria-label="Contact links">
+            <li><a href="https://github.com/iparthsolanki" target="_blank" rel="noopener noreferrer"
+                aria-label="GitHub profile (opens in a new tab)"><svg class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg></a></li>
+            <li><a href="https://www.linkedin.com/in/parth-solanki-2908pr/" target="_blank" rel="noopener noreferrer"
+                aria-label="LinkedIn profile (opens in a new tab)"><svg class="icon" aria-hidden="true">
+                  <use href="#i-linkedin" />
+                </svg></a></li>
+            <li><a href="mailto:iparthsolanki29@gmail.com" aria-label="Send an email"><svg class="icon"
+                  aria-hidden="true">
+                  <use href="#i-mail" />
+                </svg></a></li>
+            <li class="social__text"><a href="mailto:iparthsolanki29@gmail.com">iparthsolanki29@gmail.com</a></li>
+          </ul>
+        </div>
+
+        <div class="hero__visual hero-anim" style="--i:3">
+          <figure class="portrait" id="portrait" data-tilt>
+            <span class="portrait__orbit" aria-hidden="true"></span>
+            <div class="portrait__frame">
+              <img id="profileImg" src="assets/profile.jpg" alt="Portrait of Parth Solanki" width="800" height="1000"
+                fetchpriority="high">
+              <span class="portrait__fallback" aria-hidden="true">PS</span>
+            </div>
+            <figcaption class="portrait__caption">
+              <strong>Parth Solanki</strong>
+              <span>AI/ML Engineer</span>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+
+      <div class="container">
+        <dl class="stats hero-anim" style="--i:7">
+          <div class="stats__item">
+            <dt>Featured projects</dt>
+            <dd>4</dd>
+          </div>
+          <div class="stats__item">
+            <dt>Live deployments</dt>
+            <dd>2</dd>
+          </div>
+          <div class="stats__item">
+            <dt>Certifications</dt>
+            <dd>4</dd>
+          </div>
+          <div class="stats__item">
+            <dt>Best model ROC-AUC</dt>
+            <dd>97.6%</dd>
+          </div>
+        </dl>
+      </div>
+    </section>
+
+
+    <!-- ============ TECH MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track">
+        <div class="marquee__group">
+          <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>XGBoost</span><span>LangChain</span><span>LangGraph</span><span>FAISS</span><span>FastAPI</span><span>Groq</span><span>Pydantic</span><span>Hugging
+            Face</span><span>Power BI</span><span>MySQL</span>
+        </div>
+        <div class="marquee__group">
+          <span>Python</span><span>TensorFlow</span><span>Keras</span><span>Scikit-learn</span><span>XGBoost</span><span>LangChain</span><span>LangGraph</span><span>FAISS</span><span>FastAPI</span><span>Groq</span><span>Pydantic</span><span>Hugging
+            Face</span><span>Power BI</span><span>MySQL</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section section--sand" id="about" aria-labelledby="about-title">
+      <div class="container about">
+        <div class="about__text">
+          <p class="eyebrow reveal">About me</p>
+          <h2 class="section__title reveal" id="about-title">Turning machine-learning theory into things that run.</h2>
+
+          <p class="reveal">
+            I'm a third-year BCA Honours student at Swaminarayan University in Ahmedabad, and I learn best by building.
+            Since August 2025 I've been training in AI/ML and Data Science at Red &amp; White Multimedia Education,
+            where
+            coursework quickly turns into projects: tuned classifiers, a deep-learning intent model and agentic RAG
+            workflows.
+          </p>
+          <p class="reveal">
+            What draws me in is the whole life of a model, from exploratory analysis and feature engineering through
+            evaluation to an API that anyone can call. Lately I've been going deep on Generative AI: retrieval-augmented
+            generation, LangGraph agents with conditional routing, and structured LLM output with Pydantic.
+          </p>
+          <p class="reveal">
+            I'm early in my career and I know it. I'm looking for an AI/ML Engineer internship or fresher role where I
+            can
+            contribute to real problems, learn from experienced engineers and keep shipping.
+          </p>
+        </div>
+
+        <aside class="about__card reveal" aria-label="Quick facts">
+          <h3 class="about__card-title">At a glance</h3>
+          <dl class="facts">
+            <div>
+              <dt>Focus</dt>
+              <dd>Machine Learning, Deep Learning, NLP, Generative AI and Agentic AI</dd>
+            </div>
+            <div>
+              <dt>Currently</dt>
+              <dd>AI/ML &amp; Data Science Trainee</dd>
+            </div>
+            <div>
+              <dt>Studying</dt>
+              <dd>BCA Honours, graduating 2028</dd>
+            </div>
+            <div>
+              <dt>Based in</dt>
+              <dd>Ahmedabad, India</dd>
+            </div>
+            <div>
+              <dt>Looking for</dt>
+              <dd>AI/ML Engineer internship or fresher role</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section--teal" id="skills" aria-labelledby="skills-title">
+      <div class="orbs" aria-hidden="true"><span></span><span></span></div>
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Technical skills</p>
+          <h2 class="section__title reveal" id="skills-title">The toolkit behind the work.</h2>
+          <p class="section__lead reveal">Grouped by where I use them, from data preparation to deployed GenAI
+            applications.</p>
+        </header>
+
+        <div class="skills">
+          <article class="skill-card reveal" data-spotlight style="--d:0">
+            <h3 class="skill-card__title">Programming &amp; Libraries</h3>
+            <ul class="chips">
+              <li>Python</li>
+              <li>SQL</li>
+              <li>NumPy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>Seaborn</li>
+              <li>Statistics</li>
+              <li>Excel</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-spotlight style="--d:1">
+            <h3 class="skill-card__title">Machine Learning</h3>
+            <ul class="chips">
+              <li>Scikit-learn</li>
+              <li>Linear &amp; Logistic Regression</li>
+              <li>Decision Tree</li>
+              <li>Random Forest</li>
+              <li>XGBoost</li>
+              <li>SVM</li>
+              <li>KNN</li>
+              <li>Naive Bayes</li>
+              <li>K-Means Clustering</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-spotlight style="--d:2">
+            <h3 class="skill-card__title">Model Evaluation &amp; Optimization</h3>
+            <ul class="chips">
+              <li>Hyperparameter Tuning</li>
+              <li>GridSearchCV</li>
+              <li>RandomizedSearchCV</li>
+              <li>k-Fold Cross-Validation</li>
+              <li>Feature Engineering</li>
+              <li>Feature Selection</li>
+              <li>SMOTE</li>
+              <li>ROC-AUC</li>
+              <li>R² Score</li>
+              <li>Silhouette Score</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-spotlight style="--d:0">
+            <h3 class="skill-card__title">Deep Learning &amp; NLP</h3>
+            <ul class="chips">
+              <li>TensorFlow</li>
+              <li>Keras</li>
+              <li>ANN</li>
+              <li>CNN</li>
+              <li>RNN</li>
+              <li>BiGRU</li>
+              <li>NLP</li>
+              <li>Tokenization</li>
+              <li>Word Embeddings</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-spotlight style="--d:1">
+            <h3 class="skill-card__title">Generative AI</h3>
+            <ul class="chips">
+              <li>LLMs</li>
+              <li>Agentic AI</li>
+              <li>RAG</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>FAISS</li>
+              <li>Semantic Search</li>
+              <li>Hugging Face Embeddings</li>
+              <li>Prompt Engineering</li>
+              <li>Groq API</li>
+              <li>Pydantic</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal" data-spotlight style="--d:2">
+            <h3 class="skill-card__title">Deployment &amp; Analytics</h3>
+            <ul class="chips">
+              <li>FastAPI</li>
+              <li>Scikit-learn Pipeline</li>
+              <li>Joblib</li>
+              <li>Render</li>
+              <li>Git</li>
+              <li>GitHub</li>
+              <li>Power BI</li>
+              <li>DAX</li>
+              <li>MySQL</li>
+              <li>EDA</li>
+              <li>Hypothesis Testing</li>
+              <li>Jupyter</li>
+              <li>Google Colab</li>
+              <li>VS Code</li>
+              <li>Kaggle</li>
+            </ul>
+          </article>
+        </div>
+
+        <p class="soft-skills reveal">
+          <span class="soft-skills__label">Soft skills</span>
+          Analytical Thinking · Problem-Solving · Communication · Team Collaboration · Adaptability · Time Management ·
+          Attention to Detail
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects" aria-labelledby="projects-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Featured projects</p>
+          <h2 class="section__title reveal" id="projects-title">Selected work, built end to end.</h2>
+          <p class="section__lead reveal">Two agentic GenAI systems and two deployed ML models. Every metric below comes
+            from my own training and evaluation runs.</p>
+        </header>
+
+        <div class="projects">
+
+          <!-- Project 1 -->
+          <article class="project reveal" data-spotlight style="--d:0">
+            <div class="project__top">
+              <span class="project__num" aria-hidden="true">01</span>
+              <span class="project__type">Agentic RAG · LangGraph</span>
+            </div>
+            <h3 class="project__title">Amazon Employee Policy Assistant</h3>
+            <p class="project__desc">
+              An agentic RAG workflow in LangGraph where an LLM classifier routes each query across six paths using
+              conditional edges. Five FAISS retrievers (chunk size 500, overlap 100, top-3 search) feed grounded prompts
+              that keep answers tied to the source documents and reduce hallucination.
+            </p>
+            <ul class="metrics" aria-label="Key figures">
+              <li><strong>6</strong><span>routing paths</span></li>
+              <li><strong>5</strong><span>FAISS retrievers</span></li>
+              <li><strong>Top-3</strong><span>chunk retrieval</span></li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>RAG</li>
+              <li>FAISS</li>
+              <li>Hugging Face Embeddings</li>
+              <li>Groq LLM</li>
+              <li>FastAPI</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn btn--primary btn--sm"
+                href="https://github.com/iparthsolanki/Gen_Ai/tree/main/Amazon_Employee_Assistant" target="_blank"
+                rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg> GitHub<span class="sr-only"> (Amazon Employee Policy Assistant, opens in a new tab)</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="project reveal" data-spotlight style="--d:1">
+            <div class="project__top">
+              <span class="project__num" aria-hidden="true">02</span>
+              <span class="project__type">Agentic AI · LangGraph</span>
+            </div>
+            <h3 class="project__title">AI Resume Analyzer and Interview Coach</h3>
+            <p class="project__desc">
+              A seven-node LangGraph agent that parses a resume, recommends three to five roles with match scores and
+              generates five tailored interview questions. Pydantic structured output keeps every LLM response typed,
+              and an LLM-as-a-judge step scores answers from 0 to 10 with feedback and sample answers.
+            </p>
+            <ul class="metrics" aria-label="Key figures">
+              <li><strong>7</strong><span>graph nodes</span></li>
+              <li><strong>3–5</strong><span>role matches</span></li>
+              <li><strong>0–10</strong><span>judge scoring</span></li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>LangChain</li>
+              <li>LangGraph</li>
+              <li>Groq LLM</li>
+              <li>Pydantic</li>
+              <li>Structured Output</li>
+              <li>Prompt Engineering</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn btn--primary btn--sm" href="https://github.com/iparthsolanki/Gen_Ai/tree/main/Resume_Coach"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg> GitHub<span class="sr-only"> (AI Resume Analyzer and Interview Coach, opens in a new tab)</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="project reveal" data-spotlight style="--d:0">
+            <div class="project__top">
+              <span class="project__num" aria-hidden="true">03</span>
+              <span class="project__type">NLP · Deep Learning</span>
+            </div>
+            <h3 class="project__title">Banking77 Intent Prediction</h3>
+            <p class="project__desc">
+              A bidirectional GRU (BiGRU) network that classifies customer banking queries into 77 intents across
+              10,003 samples. Class weights, dropout and early stopping improve generalisation, and the model is
+              served live through FastAPI on Render.
+            </p>
+            <ul class="metrics" aria-label="Key figures">
+              <li><strong>86.85%</strong><span>test accuracy</span></li>
+              <li><strong>77</strong><span>intent classes</span></li>
+              <li><strong>10,003</strong><span>samples</span></li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>TensorFlow</li>
+              <li>Keras</li>
+              <li>RNN (BiGRU)</li>
+              <li>NLP</li>
+              <li>FastAPI</li>
+              <li>Render</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn btn--primary btn--sm" href="https://github.com/iparthsolanki/Banking_issue_prediction"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg> GitHub<span class="sr-only"> (Banking77 Intent Prediction, opens in a new tab)</span>
+              </a>
+              <a class="btn btn--ghost btn--sm" href="https://banking-issue-prediction-1.onrender.com/" target="_blank"
+                rel="noopener noreferrer">
+                Live Demo <svg class="icon" aria-hidden="true">
+                  <use href="#i-external" />
+                </svg><span class="sr-only"> (Banking77 Intent Prediction, opens in a new tab)</span>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4 -->
+          <article class="project reveal" data-spotlight style="--d:1">
+            <div class="project__top">
+              <span class="project__num" aria-hidden="true">04</span>
+              <span class="project__type">Supervised ML · Classification</span>
+            </div>
+            <h3 class="project__title">E-Commerce Customer Churn Prediction</h3>
+            <p class="project__desc">
+              Benchmarked six algorithms to predict customer churn, then tuned XGBoost with RandomizedSearchCV and
+              five-fold cross-validation. The final model reached 94.4% precision and 93.5% recall, and is deployed
+              with FastAPI on Render.
+            </p>
+            <ul class="metrics" aria-label="Key figures">
+              <li><strong>93.5%</strong><span>accuracy</span></li>
+              <li><strong>97.6%</strong><span>ROC-AUC</span></li>
+              <li><strong>6</strong><span>algorithms compared</span></li>
+            </ul>
+            <ul class="tags" aria-label="Technologies">
+              <li>Python</li>
+              <li>Scikit-learn</li>
+              <li>XGBoost</li>
+              <li>FastAPI</li>
+              <li>Pydantic</li>
+              <li>Joblib</li>
+            </ul>
+            <div class="project__actions">
+              <a class="btn btn--primary btn--sm" href="https://github.com/iparthsolanki/E-commerce_Churn_Prediction"
+                target="_blank" rel="noopener noreferrer">
+                <svg class="icon" aria-hidden="true">
+                  <use href="#i-github" />
+                </svg> GitHub<span class="sr-only"> (E-Commerce Customer Churn Prediction, opens in a new tab)</span>
+              </a>
+              <a class="btn btn--ghost btn--sm" href="https://e-commerce-churn-prediction-1.onrender.com/"
+                target="_blank" rel="noopener noreferrer">
+                Live Demo <svg class="icon" aria-hidden="true">
+                  <use href="#i-external" />
+                </svg><span class="sr-only"> (E-Commerce Customer Churn Prediction, opens in a new tab)</span>
+              </a>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="projects__more reveal">
+          More code lives on
+          <a href="https://github.com/iparthsolanki" target="_blank"
+            rel="noopener noreferrer">github.com/iparthsolanki</a>.
+          Live demos run on a free hosting tier, so the first load may take a moment to wake up.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section--teal" id="experience" aria-labelledby="experience-title">
+      <div class="orbs" aria-hidden="true"><span></span><span></span></div>
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Experience</p>
+          <h2 class="section__title reveal" id="experience-title">Learning by shipping.</h2>
+        </header>
+
+        <ol class="timeline">
+          <li class="timeline__item reveal">
+            <span class="timeline__marker" aria-hidden="true"><svg class="icon">
+                <use href="#i-briefcase" />
+              </svg></span>
+            <div class="timeline__card timeline__card--dark" data-spotlight>
+              <div class="timeline__head">
+                <div>
+                  <h3 class="timeline__title">AI/ML &amp; Data Science Trainee</h3>
+                  <p class="timeline__org">Red &amp; White Multimedia Education · Ahmedabad</p>
+                </div>
+                <p class="timeline__date">August 2025 – Present</p>
+              </div>
+              <ul class="timeline__list">
+                <li>Built end-to-end Machine Learning models and Generative AI RAG-based applications with fine-tuning,
+                  deployed using FastAPI.</li>
+                <li>Trained on Python, SQL, Statistics, ML algorithms, Deep Learning, NLP, LangChain and LangGraph
+                  through hands-on projects.</li>
+              </ul>
+              <ul class="tags tags--light" aria-label="Focus areas">
+                <li>Python</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>NLP</li>
+                <li>LangChain</li>
+                <li>LangGraph</li>
+                <li>FastAPI</li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section" id="certifications" aria-labelledby="cert-title">
+      <div class="container">
+        <header class="section__head">
+          <p class="eyebrow reveal">Education &amp; certifications</p>
+          <h2 class="section__title reveal" id="cert-title">Foundations and credentials.</h2>
+        </header>
+
+        <div class="edu-cert">
+          <div>
+            <h3 class="subhead reveal"><svg class="icon" aria-hidden="true">
+                <use href="#i-cap" />
+              </svg> Education</h3>
+            <ol class="timeline timeline--compact">
+              <li class="timeline__item reveal">
+                <span class="timeline__marker" aria-hidden="true"></span>
+                <div class="timeline__card" data-spotlight>
+                  <p class="timeline__date">2024 – 2028</p>
+                  <h4 class="timeline__title">Bachelor of Computer Application (BCA Honours)</h4>
+                  <p class="timeline__org">Swaminarayan University, Ahmedabad</p>
+                </div>
+              </li>
+              <li class="timeline__item reveal">
+                <span class="timeline__marker" aria-hidden="true"></span>
+                <div class="timeline__card" data-spotlight>
+                  <p class="timeline__date">2024</p>
+                  <h4 class="timeline__title">Higher Secondary (12th)</h4>
+                  <p class="timeline__org">Gujarat Secondary and Higher Secondary Education Board</p>
+                </div>
+              </li>
+              <li class="timeline__item reveal">
+                <span class="timeline__marker" aria-hidden="true"></span>
+                <div class="timeline__card" data-spotlight>
+                  <p class="timeline__date">2022</p>
+                  <h4 class="timeline__title">Secondary (10th)</h4>
+                  <p class="timeline__org">Gujarat Secondary and Higher Secondary Education Board</p>
+                </div>
+              </li>
+            </ol>
+          </div>
+
+          <div>
+            <h3 class="subhead reveal"><svg class="icon" aria-hidden="true">
+                <use href="#i-award" />
+              </svg> Certifications</h3>
+            <ul class="certs">
+              <li class="cert reveal" data-spotlight>
+                <h4 class="cert__title">Machine Learning</h4>
+                <p class="cert__org">thinkQbator Program, Nasscom Foundation (Cisco CSR)</p>
+                <a class="cert__link"
+                  href="https://drive.google.com/file/d/1ye4gorA01tSamGw9GFh1Po4qotKWiIbq/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer">View certificate <svg class="icon" aria-hidden="true">
+                    <use href="#i-external" />
+                  </svg><span class="sr-only"> (Machine Learning, opens in a new tab)</span></a>
+              </li>
+              <li class="cert reveal" data-spotlight>
+                <h4 class="cert__title">Gen-AI</h4>
+                <p class="cert__org">Google Cloud via Simplilearn SkillUp · Jul 2026</p>
+                <p class="cert__meta">Code: 10472513</p>
+                <a class="cert__link"
+                  href="https://drive.google.com/file/d/1reHeHk0s0fbw1Bg9AJI_7pv_nSMG-WBF/view?usp=sharing"
+                  target="_blank" rel="noopener noreferrer">View certificate <svg class="icon" aria-hidden="true">
+                    <use href="#i-external" />
+                  </svg><span class="sr-only"> (Gen-AI, opens in a new tab)</span></a>
+              </li>
+              <li class="cert reveal" data-spotlight>
+                <h4 class="cert__title">AI/ML and Data Science</h4>
+                <p class="cert__org">NSDC (National Skill Development Corporation)</p>
+              </li>
+              <li class="cert reveal" data-spotlight>
+                <h4 class="cert__title">Python Analyzer, TechWar 2026</h4>
+                <p class="cert__org">Red &amp; White Skill Education · Jan 2026</p>
+                <p class="cert__meta">ID: RW-TW260518</p>
+                <a class="cert__link"
+                  href="https://drive.google.com/file/d/1vuIONaecgwbcFwivY3VTs1txrQVt_6nV/view?usp=drive_link"
+                  target="_blank" rel="noopener noreferrer">View certificate <svg class="icon" aria-hidden="true">
+                    <use href="#i-external" />
+                  </svg><span class="sr-only"> (Python Analyzer TechWar 2026, opens in a new tab)</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section--wine" id="contact" aria-labelledby="contact-title">
+      <div class="orbs" aria-hidden="true"><span></span><span></span></div>
+      <div class="container contact">
+        <div class="contact__intro">
+          <p class="eyebrow eyebrow--light reveal">Contact</p>
+          <h2 class="section__title reveal" id="contact-title">Let's build something intelligent together.</h2>
+          <p class="reveal">
+            I'm open to AI/ML Engineer internships and fresher roles. If you have an opportunity, a project idea or just
+            a
+            question about my work, I'd be glad to hear from you.
+          </p>
+
+          <ul class="contact__list reveal">
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-mail" />
+              </svg>
+              <span><small>Email</small><a href="mailto:iparthsolanki29@gmail.com">iparthsolanki29@gmail.com</a></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-github" />
+              </svg>
+              <span><small>GitHub</small><a href="https://github.com/iparthsolanki" target="_blank"
+                  rel="noopener noreferrer">github.com/iparthsolanki</a></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-linkedin" />
+              </svg>
+              <span><small>LinkedIn</small><a href="https://www.linkedin.com/in/parth-solanki-2908pr/" target="_blank"
+                  rel="noopener noreferrer">linkedin.com/in/parth-solanki-2908pr</a></span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-pin" />
+              </svg>
+              <span><small>Location</small>Ahmedabad, Gujarat, India</span>
+            </li>
+            <li>
+              <svg class="icon" aria-hidden="true">
+                <use href="#i-download" />
+              </svg>
+              <span><small>Resume</small><a class="js-resume" href="Parth_Solanki_AI_ML_Engineer_Resume.pdf"
+                  download="Parth_Solanki_AI_ML_Engineer_Resume.pdf">Download PDF</a></span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="contact__form reveal" id="contactForm" novalidate>
+          <h3 class="contact__form-title">Send a message</h3>
+
+          <div class="field-row">
+            <div class="field">
+              <label for="cName">Your name</label>
+              <input id="cName" name="name" type="text" autocomplete="name" required>
+            </div>
+            <div class="field">
+              <label for="cEmail">Your email</label>
+              <input id="cEmail" name="email" type="email" autocomplete="email" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="cCompany">Company / organisation <span class="field__opt">(optional)</span></label>
+            <input id="cCompany" name="company" type="text" autocomplete="organization">
+          </div>
+          <div class="field">
+            <label for="cMessage">Message</label>
+            <textarea id="cMessage" name="message" rows="5" required></textarea>
+          </div>
+
+          <!-- Spam trap: real visitors never see or fill this field -->
+          <div class="hp" aria-hidden="true">
+            <label for="cWebsite">Leave this field empty</label>
+            <input id="cWebsite" name="botcheck" type="text" tabindex="-1" autocomplete="off">
+          </div>
+          <!-- Filled in by script.js just before sending -->
+          <input type="hidden" name="sent_at" value="">
+          <input type="hidden" name="page_url" value="">
+
+          <button class="btn btn--primary" type="submit">
+            <svg class="icon" aria-hidden="true">
+              <use href="#i-send" />
+            </svg> Send message
+          </button>
+          <p class="form__note" id="formNote" role="status" aria-live="polite">
+            Your message goes straight to my inbox and I'll reply by email.
+          </p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer">
+      <p>© <span id="year">2026</span> Parth Solanki. All rights reserved.</p>
+      <p class="footer__built">Handcrafted with HTML, CSS and JavaScript.</p>
+    </div>
+  </footer>
+
+  <button class="to-top" id="toTop" type="button" aria-label="Back to top" hidden>
+    <svg class="icon" aria-hidden="true">
+      <use href="#i-up" />
+    </svg>
+  </button>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <!-- EmailJS browser SDK, stored locally so the form has no CDN dependency -->
+  <script src="assets/vendor/emailjs.min.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
